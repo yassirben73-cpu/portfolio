@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio — Yassir Bensmina</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ═══ NAVBAR ═══ -->
+  <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="#home">
+        <span class="brand-bracket">&lt;</span>fsociety<span class="brand-bracket">/&gt;</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="toggler-icon"></span>
+        <span class="toggler-icon"></span>
+        <span class="toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">À Propos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Compétences</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projets</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ═══ HERO / ACCUEIL ═══ -->
+  <section id="home" class="hero-section">
+    <div class="hero-grid-bg"></div>
+    <div class="hero-glow"></div>
+    <div class="container hero-content">
+      <div class="row align-items-center min-vh-100">
+        <div class="col-lg-7 hero-text">
+          <p class="hero-label">👋 Bonjour, je suis</p>
+          <h1 class="hero-name"> <span class="text-lime">Bensmina</span><br />yassir</h1>
+          <p class="hero-title">Développeur <span class="text-violet">Full Stack</span></p>
+          <p class="hero-desc">
+            Passionné par le code, le design et les technologies modernes. Je construis des applications web performantes, élégantes et scalables.
+          </p>
+          <div class="hero-btns">
+            <a href="#projects" class="btn btn-lime">Voir mes projets</a>
+            <a href="#contact" class="btn btn-outline-light-custom">Me contacter</a>
+          </div>
+          <div class="hero-socials">
+            <a href="https://github.com/yassirben73-cpu" class="social-icon"><i class="bi bi-github"></i></a>
+            <a href="www.linkedin.com/in/yassir-bensmina-5a7967388" class="social-icon"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="social-icon"><i class="bi bi-twitter-x"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-5 hero-img-col">
+          <div class="hero-photo-wrapper">
+            <!-- Photo héro -->
+            <img src="img/cv_soutenance.jpeg" alt="CV de Yassir Bensmina" />
+            <div class="hero-photo-frame"></div>
+            <div class="hero-badge badge-top">Full Stack Dev</div>
+            <div class="hero-badge badge-bottom"><i class="bi bi-star-fill"></i> Disponible</div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ À PROPOS ═══ -->
+  <section id="about" class="section-pad">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"></span>
+        <h2 class="section-title">À <span class="text-lime">Propos</span></h2>
+      </div>
+      <div class="row align-items-center g-5">
+        <div class="col-lg-5">
+          <div class="about-img-wrapper">
+            <!-- Photo à propos -->
+            <img src="img/second_img.jpeg" alt="Yassir Bensmina - À propos" />
+            <div class="about-frame-deco"></div>
+            <div class="about-stats-card">
+              <div class="stat-item">
+                <span class="stat-num text-lime">1</span>
+                <span class="stat-label">Stage réalisé</span>
+              </div>
+              <div class="stat-divider"></div>
+              <div class="stat-item">
+                <span class="stat-num text-lime">3</span>
+                <span class="stat-label">Projets réalisés</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <p class="about-intro">Je suis un développeur <strong class="text-lime">Full Stack</strong> passionné par la création d'expériences web modernes et intuitives.</p>
+          <p class="about-text">J'ai étudié à l'<strong class="text-lime">OFPPT Ifrane</strong>, option Web Full Stack. Je suis actuellement en formation d'un an en développement informatique au sein du <strong class="text-lime">Centre Communautaire Al Akhawayn</strong>. Je n'ai pas encore d'expérience professionnelle, mais j'ai effectué un <strong class="text-lime">stage d'un mois à la Commune d'Ifrane</strong> où j'ai développé un système de gestion de stock. Je me spécialise dans le développement web avec une expertise en HTML5, CSS3, Bootstrap, JavaScript, PHP et Laravel, et je suis toujours à la recherche de nouveaux défis pour améliorer mes compétences.</p>
+          <p class="about-text">Ma philosophie : un code propre, une UI soignée, et une expérience utilisateur irréprochable.</p>
+          <div class="about-info-grid">
+            <div class="info-item"><span class="info-label">Nom :</span><span class="info-val">Bensmina yassir</span></div>
+            <div class="info-item"><span class="info-label">Email :</span><span class="info-val">yassirbensmina73@gmail.com</span></div>
+            <div class="info-item"><span class="info-label">Ville :</span><span class="info-val">Ifrane, Maroc</span></div>
+            <div class="info-item"><span class="info-label">Statut :</span><span class="info-val text-lime">Disponible</span></div>
+          </div>
+          <a href="cv_yassir_bensmina.pdf" download="CV_Yassir_Bensmina.pdf" class="btn btn-lime mt-4"><i class="bi bi-download me-2"></i>Télécharger CV</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ COMPÉTENCES ═══ -->
+  <section id="skills" class="section-pad section-dark">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"></span>
+        <h2 class="section-title">Mes <span class="text-lime">Compétences</span></h2>
+      </div>
+
+      <!-- Technical Skills Bars -->
+      <div class="row g-5">
+        <div class="col-lg-6">
+          <h3 class="skills-subtitle">🔹 Front-End</h3>
+          <div class="skill-group">
+            <div class="skill-item">
+              <div class="skill-meta"><span>HTML5</span><span class="text-lime">90%</span></div>
+              <div class="progress skill-bar"><div class="progress-bar" style="width:90%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-meta"><span>CSS3</span><span class="text-lime">85%</span></div>
+              <div class="progress skill-bar"><div class="progress-bar" style="width:85%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-meta"><span>Bootstrap 5</span><span class="text-lime">85%</span></div>
+              <div class="progress skill-bar"><div class="progress-bar" style="width:85%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-meta"><span>JavaScript</span><span class="text-lime">70%</span></div>
+              <div class="progress skill-bar"><div class="progress-bar" style="width:70%"></div></div>
+            </div>
+          </div>
+          <h3 class="skills-subtitle mt-4">🔹 Back-End</h3>
+          <div class="skill-group">
+            <div class="skill-item">
+              <div class="skill-meta"><span>PHP</span><span class="text-lime">75%</span></div>
+              <div class="progress skill-bar"><div class="progress-bar" style="width:75%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-meta"><span>MySQL</span><span class="text-lime">80%</span></div>
+              <div class="progress skill-bar"><div class="progress-bar" style="width:80%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-meta"><span>Laravel</span><span class="text-lime">65%</span></div>
+              <div class="progress skill-bar"><div class="progress-bar" style="width:65%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-meta"><span>Python</span><span class="text-lime">60%</span></div>
+              <div class="progress skill-bar"><div class="progress-bar" style="width:60%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-meta"><span>Java</span><span class="text-lime">50%</span></div>
+              <div class="progress skill-bar"><div class="progress-bar" style="width:50%"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <!-- Tech Tag Cards -->
+          <h3 class="skills-subtitle">🔹 Cloud & DevOps</h3>
+          <div class="tech-tags">
+            <span class="tech-tag"><i class="bi bi-box me-1"></i>Docker</span>
+            <span class="tech-tag"><i class="bi bi-cloud me-1"></i>Cloud Native</span>
+            <span class="tech-tag"><i class="bi bi-diagram-3 me-1"></i>Microservices</span>
+            <span class="tech-tag"><i class="bi bi-arrows-angle-contract me-1"></i>API REST</span>
+            <span class="tech-tag"><i class="bi bi-git me-1"></i>Git & GitHub</span>
+            <span class="tech-tag"><i class="bi bi-shield-lock me-1"></i>JWT Auth</span>
+          </div>
+          <h3 class="skills-subtitle mt-4">🛠️ Outils</h3>
+          <div class="tech-tags">
+            <span class="tech-tag tag-violet"><i class="bi bi-code-slash me-1"></i>VS Code</span>
+            <span class="tech-tag tag-violet"><i class="bi bi-github me-1"></i>GitHub</span>
+            <span class="tech-tag tag-violet"><i class="bi bi-database me-1"></i>phpMyAdmin</span>
+          </div>
+          <h3 class="skills-subtitle mt-4">🧩 Soft Skills</h3>
+          <div class="soft-skills-grid">
+            <div class="soft-skill-item"><span class="soft-check">✔</span>Travail en équipe</div>
+            <div class="soft-skill-item"><span class="soft-check">✔</span>Adaptabilité</div>
+            <div class="soft-skill-item"><span class="soft-check">✔</span>Créativité</div>
+            <div class="soft-skill-item"><span class="soft-check">✔</span>Organisation</div>
+            <div class="soft-skill-item"><span class="soft-check">✔</span>Gestion du temps</div>
+            <div class="soft-skill-item"><span class="soft-check">✔</span>Communication</div>
+            <div class="soft-skill-item"><span class="soft-check">✔</span>Autonomie</div>
+            <div class="soft-skill-item"><span class="soft-check">✔</span>Apprentissage rapide</div>
+            <div class="soft-skill-item"><span class="soft-check">✔</span>Vibe Coder</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ PROJETS ═══ -->
+  <section id="projects" class="section-pad">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"></span>
+        <h2 class="section-title">Mes <span class="text-lime">Projets</span></h2>
+      </div>
+      <div class="row g-4">
+
+        <!-- Project Card 1 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="project-card">
+            <div class="project-img-wrap">
+              <img src="img/nexus_qcm.png" alt="Cyber Prep Nexus QCM - Classement" />
+              <div class="project-overlay">
+                <a href="https://github.com/yassirben73-cpu/preparations_concours" class="btn btn-sm btn-lime" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-eye me-1"></i>Voir
+                </a>
+                <a href="https://github.com/yassirben73-cpu/preparations_concours" class="btn btn-sm btn-outline-light-custom" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-github me-1"></i>GitHub
+                </a>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="ptag">HTML</span><span class="ptag">CSS</span><span class="ptag">JavaScript</span>
+                <span class="ptag ptag-offline"><i class="bi bi-cloud-slash me-1"></i>Non hébergé</span>
+              </div>
+              <h4 class="project-title">Cyber Prep — Nexus QCM</h4>
+              <p class="project-desc">Application de préparation au concours via QCM interactifs. Conçue pour les développeurs, elle couvre tout ce dont ils ont besoin : Linux, réseaux, algorithmique et plus encore. Classement, sessions et suivi de précision inclus.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Card 2 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="project-card">
+            <div class="project-img-wrap">
+              <!-- Screenshot du projet (ajoute le fichier dans le dossier img) -->
+              <img src="img/screen_d'app_quiz.png" alt="Quiz MongoDB - Capture d'écran" />
+              <div class="project-overlay">
+                <a href="https://github.com/yassirben73-cpu/quiz_test_mongoDB" class="btn btn-sm btn-lime" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-eye me-1"></i>Voir
+                </a>
+                <a href="https://github.com/yassirben73-cpu/quiz_test_mongoDB" class="btn btn-sm btn-outline-light-custom" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-github me-1"></i>GitHub
+                </a>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="ptag">HTML</span><span class="ptag">CSS</span><span class="ptag">JavaScript</span><span class="ptag">MongoDB</span>
+                <span class="ptag ptag-offline"><i class="bi bi-cloud-slash me-1"></i>Non hébergé</span>
+              </div>
+              <h4 class="project-title">Quiz MongoDB (Projet de tests)</h4>
+              <p class="project-desc">
+                Petite application de quiz réalisée pour tester et pratiquer MongoDB et le développement full stack. Code disponible sur GitHub.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Card 3 — AtlasMat -->
+        <div class="col-lg-4 col-md-6">
+          <div class="project-card">
+            <div class="project-img-wrap">
+              <img src="img/dashboard.png" alt="AtlasMat - Gestion de Matériels" />
+              <div class="project-overlay">
+                <a href="https://github.com/yassirben73-cpu/gestions_materiels" class="btn btn-sm btn-lime" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-eye me-1"></i>Voir
+                </a>
+                <a href="https://github.com/yassirben73-cpu/gestions_materiels" class="btn btn-sm btn-outline-light-custom" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-github me-1"></i>GitHub
+                </a>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="ptag">Laravel</span><span class="ptag">React</span><span class="ptag">MySQL</span><span class="ptag">API REST</span>
+                <span class="ptag ptag-offline"><i class="bi bi-cloud-slash me-1"></i>Non hébergé</span>
+              </div>
+              <h4 class="project-title">AtlasMat — Gestion de Matériels</h4>
+              <p class="project-desc">
+                Application web complète de gestion de matériels développée lors de mon stage à la Commune d'Ifrane. Backend Laravel (API REST) et frontend React avec tableau de bord, affectations, approvisionnements et historique.
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CONTACT ═══ -->
+  <section id="contact" class="section-pad section-dark">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"></span>
+        <h2 class="section-title">Me <span class="text-lime">Contacter</span></h2>
+      </div>
+      <div class="row g-5">
+        <div class="col-lg-5">
+          <p class="contact-intro">Vous avez un projet en tête ? Une collaboration ? N'hésitez pas à me contacter, je répondrai dans les plus brefs délais.</p>
+          <div class="contact-info-list">
+            <div class="contact-info-item">
+              <div class="contact-icon"><i class="bi bi-envelope-fill"></i></div>
+              <div>
+                <p class="ci-label">Email</p>
+                <p class="ci-val">yassirbensmina73@gmail.com</p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-icon"><i class="bi bi-telephone-fill"></i></div>
+              <div>
+                <p class="ci-label">Téléphone</p>
+                <p class="ci-val">+212 772890503</p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-icon"><i class="bi bi-geo-alt-fill"></i></div>
+              <div>
+                <p class="ci-label">Localisation</p>
+                <p class="ci-val">Ifrane, Maroc</p>
+              </div>
+            </div>
+          </div>
+          <div class="contact-socials">
+            <a href="https://github.com/yassirben73-cpu" class="social-icon"><i class="bi bi-github"></i></a>
+            <a href="www.linkedin.com/in/yassir-bensmina-5a7967388" class="social-icon"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="social-icon"><i class="bi bi-twitter-x"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <div class="form-group-custom">
+                  <label for="name">Nom complet</label>
+                  <input type="text" id="name" class="form-control custom-input" placeholder="Votre nom" required />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group-custom">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" class="form-control custom-input" placeholder="votre@email.com" required />
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-group-custom">
+                  <label for="subject">Sujet</label>
+                  <input type="text" id="subject" class="form-control custom-input" placeholder="Sujet du message" required />
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-group-custom">
+                  <label for="message">Message</label>
+                  <textarea id="message" class="form-control custom-input" rows="5" placeholder="Votre message..." required></textarea>
+                </div>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-lime w-100">
+                  <i class="bi bi-send-fill me-2"></i>Envoyer le message
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <a class="navbar-brand" href="#home">
+          <span class="brand-bracket">&lt;</span>fsociety<span class="brand-bracket">/&gt;</span>
+        </a>
+        <p class="footer-copy">© 2025 — Tous droits réservés. Construit avec <span class="text-lime">❤</span> et beaucoup de café.</p>
+        <a href="#home" class="back-top"><i class="bi bi-arrow-up"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="css/script.js"></script>
+</body>
+</html>
