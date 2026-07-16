@@ -1,0 +1,88 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À Propos",
+    "skills": "Compétences",
+    "projects": "Projets",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "👋 Bonjour, je suis",
+    "name": "Bensmina yassir",
+    "title": "Développeur Full Stack",
+    "description": "Passionné par le code, le design et les technologies modernes. Je construis des applications web performantes, élégantes et scalables.",
+    "viewProjects": "Voir mes projets",
+    "contactMe": "Me contacter",
+    "badgeTop": "Full Stack Dev",
+    "badgeBottom": "Disponible",
+    "scroll": "Scroll"
+  },
+  "about": {
+    "title": "À Propos",
+    "intro": "Je suis un développeur Full Stack passionné par la création d'expériences web modernes et intuitives.",
+    "text": "J'ai étudié à l'OFPPT Ifrane, option Web Full Stack. Je suis actuellement en formation d'un an en développement informatique au sein du Centre Communautaire Al Akhawayn. Je n'ai pas encore d'expérience professionnelle, mais j'ai effectué un stage d'un mois à la Commune d'Ifrane où j'ai développé un système de gestion de stock. Je me spécialise dans le développement web avec une expertise en HTML5, CSS3, Bootstrap, JavaScript, PHP et Laravel, et je suis toujours à la recherche de nouveaux défis pour améliorer mes compétences.",
+    "philosophy": "Ma philosophie : un code propre, une UI soignée, et une expérience utilisateur irréprochable.",
+    "info": {
+      "name": "Nom",
+      "email": "Email",
+      "city": "Ville",
+      "status": "Statut"
+    },
+    "stats": {
+      "internship": "Stages réalisés",
+      "projects": "Projets réalisés"
+    },
+    "downloadCV": "Télécharger CV"
+  },
+  "skills": {
+    "title": "Mes Compétences",
+    "frontend": "Front-End",
+    "backend": "Back-End",
+    "cloud": "Cloud & DevOps",
+    "tools": "Outils",
+    "softSkills": "Soft Skills"
+  },
+  "projects": {
+    "title": "Mes Projets",
+    "view": "Voir",
+    "github": "GitHub",
+    "notHosted": "Non hébergé",
+    "project1": {
+      "title": "Cyber Prep — Nexus QCM",
+      "description": "Application de préparation au concours via QCM interactifs. Conçue pour les développeurs, elle couvre tout ce dont ils ont besoin : Linux, réseaux, algorithmique et plus encore. Classement, sessions et suivi de précision inclus."
+    },
+    "project2": {
+      "title": "Quiz MongoDB (Projet de tests)",
+      "description": "Petite application de quiz réalisée pour tester et pratiquer MongoDB et le développement full stack. Code disponible sur GitHub."
+    },
+    "project3": {
+      "title": "AtlasMat — Gestion de Matériels",
+      "description": "Application web complète de gestion de matériels développée lors de mon stage à la Commune d'Ifrane. Backend Laravel (API REST) et frontend React avec tableau de bord, affectations, approvisionnements et historique."
+    }
+  },
+  "contact": {
+    "title": "Me Contacter",
+    "intro": "Vous avez un projet en tête ? Une collaboration ? N'hésitez pas à me contacter, je répondrai dans les plus brefs délais.",
+    "info": {
+      "email": "Email",
+      "phone": "Téléphone",
+      "location": "Localisation"
+    },
+    "form": {
+      "name": "Nom complet",
+      "namePlaceholder": "Votre nom",
+      "email": "Email",
+      "emailPlaceholder": "votre@email.com",
+      "subject": "Sujet",
+      "subjectPlaceholder": "Sujet du message",
+      "message": "Message",
+      "messagePlaceholder": "Votre message...",
+      "send": "Envoyer le message"
+    },
+    "success": "Message envoyé avec succès !",
+    "error": "Erreur lors de l'envoi du message. Veuillez réessayer."
+  },
+  "footer": {
+    "copyright": "© 2025 — Tous droits réservés. Construit avec ❤ et beaucoup de café."
+  }
+}

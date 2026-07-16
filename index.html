@@ -8,6 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
   <link rel="stylesheet" href="css/style.css" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
 <body>
 
@@ -24,11 +25,16 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#home">Accueil</a></li>
-          <li class="nav-item"><a class="nav-link" href="#about">À Propos</a></li>
-          <li class="nav-item"><a class="nav-link" href="#skills">Compétences</a></li>
-          <li class="nav-item"><a class="nav-link" href="#projects">Projets</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="#home" data-i18n="nav.home">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about" data-i18n="nav.about">À Propos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills" data-i18n="nav.skills">Compétences</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects" data-i18n="nav.projects">Projets</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact" data-i18n="nav.contact">Contact</a></li>
+          <li class="nav-item ms-3">
+            <button class="btn btn-sm btn-outline-light-custom lang-toggle" id="langToggle">
+              <i class="bi bi-globe me-1"></i><span id="currentLang">FR</span>
+            </button>
+          </li>
         </ul>
       </div>
     </div>
@@ -41,20 +47,20 @@
     <div class="container hero-content">
       <div class="row align-items-center min-vh-100">
         <div class="col-lg-7 hero-text">
-          <p class="hero-label">👋 Bonjour, je suis</p>
+          <p class="hero-label" data-i18n="hero.greeting">👋 Bonjour, je suis</p>
           <h1 class="hero-name"> <span class="text-lime">Bensmina</span><br />yassir</h1>
-          <p class="hero-title">Développeur <span class="text-violet">Full Stack</span></p>
-          <p class="hero-desc">
+          <p class="hero-title" data-i18n="hero.title">Développeur <span class="text-violet">Full Stack</span></p>
+          <p class="hero-desc" data-i18n="hero.description">
             Passionné par le code, le design et les technologies modernes. Je construis des applications web performantes, élégantes et scalables.
           </p>
           <div class="hero-btns">
-            <a href="#projects" class="btn btn-lime">Voir mes projets</a>
-            <a href="#contact" class="btn btn-outline-light-custom">Me contacter</a>
+            <a href="#projects" class="btn btn-lime" data-i18n="hero.viewProjects">Voir mes projets</a>
+            <a href="#contact" class="btn btn-outline-light-custom" data-i18n="hero.contactMe">Me contacter</a>
           </div>
           <div class="hero-socials">
             <a href="https://github.com/yassirben73-cpu" class="social-icon"><i class="bi bi-github"></i></a>
-            <a href="www.linkedin.com/in/yassir-bensmina-5a7967388" class="social-icon"><i class="bi bi-linkedin"></i></a>
-            <a href="#" class="social-icon"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://www.linkedin.com/in/yassir-bensmina-85aa91420/" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a>
+            <a href="https://x.com/y1ssir_bens" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="bi bi-twitter-x"></i></a>
           </div>
         </div>
         <div class="col-lg-5 hero-img-col">
@@ -62,13 +68,13 @@
             <!-- Photo héro -->
             <img src="img/cv_soutenance.jpeg" alt="CV de Yassir Bensmina" />
             <div class="hero-photo-frame"></div>
-            <div class="hero-badge badge-top">Full Stack Dev</div>
-            <div class="hero-badge badge-bottom"><i class="bi bi-star-fill"></i> Disponible</div>
+            <div class="hero-badge badge-top" data-i18n="hero.badgeTop">Full Stack Dev</div>
+            <div class="hero-badge badge-bottom"><i class="bi bi-star-fill"></i> <span data-i18n="hero.badgeBottom">Disponible</span></div>
           </div>
         </div>
       </div>
       <div class="scroll-indicator">
-        <span>Scroll</span>
+        <span data-i18n="hero.scroll">Scroll</span>
         <div class="scroll-line"></div>
       </div>
     </div>
@@ -79,7 +85,7 @@
     <div class="container">
       <div class="section-header">
         <span class="section-tag"></span>
-        <h2 class="section-title">À <span class="text-lime">Propos</span></h2>
+        <h2 class="section-title" data-i18n="about.title">À <span class="text-lime">Propos</span></h2>
       </div>
       <div class="row align-items-center g-5">
         <div class="col-lg-5">
@@ -89,28 +95,28 @@
             <div class="about-frame-deco"></div>
             <div class="about-stats-card">
               <div class="stat-item">
-                <span class="stat-num text-lime">1</span>
-                <span class="stat-label">Stage réalisé</span>
+                <span class="stat-num text-lime">2</span>
+                <span class="stat-label" data-i18n="about.stats.internship">Stage réalisé</span>
               </div>
               <div class="stat-divider"></div>
               <div class="stat-item">
-                <span class="stat-num text-lime">3</span>
-                <span class="stat-label">Projets réalisés</span>
+                <span class="stat-num text-lime">4</span>
+                <span class="stat-label" data-i18n="about.stats.projects">Projets réalisés</span>
               </div>
             </div>
           </div>
         </div>
         <div class="col-lg-7">
-          <p class="about-intro">Je suis un développeur <strong class="text-lime">Full Stack</strong> passionné par la création d'expériences web modernes et intuitives.</p>
-          <p class="about-text">J'ai étudié à l'<strong class="text-lime">OFPPT Ifrane</strong>, option Web Full Stack. Je suis actuellement en formation d'un an en développement informatique au sein du <strong class="text-lime">Centre Communautaire Al Akhawayn</strong>. Je n'ai pas encore d'expérience professionnelle, mais j'ai effectué un <strong class="text-lime">stage d'un mois à la Commune d'Ifrane</strong> où j'ai développé un système de gestion de stock. Je me spécialise dans le développement web avec une expertise en HTML5, CSS3, Bootstrap, JavaScript, PHP et Laravel, et je suis toujours à la recherche de nouveaux défis pour améliorer mes compétences.</p>
-          <p class="about-text">Ma philosophie : un code propre, une UI soignée, et une expérience utilisateur irréprochable.</p>
+          <p class="about-intro" data-i18n="about.intro">Je suis un développeur <strong class="text-lime">Full Stack</strong> passionné par la création d'expériences web modernes et intuitives.</p>
+          <p class="about-text" data-i18n="about.text">J'ai étudié à l'<strong class="text-lime">OFPPT Ifrane</strong>, option Web Full Stack. Je suis actuellement en formation d'un an en développement informatique au sein du <strong class="text-lime">Centre Communautaire Al Akhawayn</strong>. Je n'ai pas encore d'expérience professionnelle, mais j'ai effectué un <strong class="text-lime">stage d'un mois à la Commune d'Ifrane</strong> où j'ai développé un système de gestion de stock. Je me spécialise dans le développement web avec une expertise en HTML5, CSS3, Bootstrap, JavaScript, PHP et Laravel, et je suis toujours à la recherche de nouveaux défis pour améliorer mes compétences.</p>
+          <p class="about-text" data-i18n="about.philosophy">Ma philosophie : un code propre, une UI soignée, et une expérience utilisateur irréprochable.</p>
           <div class="about-info-grid">
-            <div class="info-item"><span class="info-label">Nom :</span><span class="info-val">Bensmina yassir</span></div>
-            <div class="info-item"><span class="info-label">Email :</span><span class="info-val">yassirbensmina73@gmail.com</span></div>
-            <div class="info-item"><span class="info-label">Ville :</span><span class="info-val">Ifrane, Maroc</span></div>
-            <div class="info-item"><span class="info-label">Statut :</span><span class="info-val text-lime">Disponible</span></div>
+            <div class="info-item"><span class="info-label" data-i18n="about.info.name">Nom :</span><span class="info-val">Bensmina yassir</span></div>
+            <div class="info-item"><span class="info-label" data-i18n="about.info.email">Email :</span><span class="info-val">yassirbensmina73@gmail.com</span></div>
+            <div class="info-item"><span class="info-label" data-i18n="about.info.city">Ville :</span><span class="info-val">Ifrane, Maroc</span></div>
+            <div class="info-item"><span class="info-label" data-i18n="about.info.status">Statut :</span><span class="info-val text-lime">Disponible</span></div>
           </div>
-          <a href="cv_yassir_bensmina.pdf" download="CV_Yassir_Bensmina.pdf" class="btn btn-lime mt-4"><i class="bi bi-download me-2"></i>Télécharger CV</a>
+          <a href="Resume_Yassir_Bensmina_English.pdf" download="Resume_Yassir_Bensmina_English.pdf" class="btn btn-lime mt-4"><i class="bi bi-download me-2"></i><span data-i18n="about.downloadCV">Télécharger CV</span></a>
         </div>
       </div>
     </div>
@@ -121,59 +127,59 @@
     <div class="container">
       <div class="section-header">
         <span class="section-tag"></span>
-        <h2 class="section-title">Mes <span class="text-lime">Compétences</span></h2>
+        <h2 class="section-title" data-i18n="skills.title">Mes <span class="text-lime">Compétences</span></h2>
       </div>
 
       <!-- Technical Skills Bars -->
       <div class="row g-5">
         <div class="col-lg-6">
-          <h3 class="skills-subtitle">🔹 Front-End</h3>
+          <h3 class="skills-subtitle" data-i18n="skills.frontend">🔹 Front-End</h3>
           <div class="skill-group">
             <div class="skill-item">
               <div class="skill-meta"><span>HTML5</span><span class="text-lime">90%</span></div>
-              <div class="progress skill-bar"><div class="progress-bar" style="width:90%"></div></div>
+              <div class="progress skill-bar"><div class="progress-bar" data-width="90%" style="width:90%"></div></div>
             </div>
             <div class="skill-item">
               <div class="skill-meta"><span>CSS3</span><span class="text-lime">85%</span></div>
-              <div class="progress skill-bar"><div class="progress-bar" style="width:85%"></div></div>
+              <div class="progress skill-bar"><div class="progress-bar" data-width="85%" style="width:85%"></div></div>
             </div>
             <div class="skill-item">
               <div class="skill-meta"><span>Bootstrap 5</span><span class="text-lime">85%</span></div>
-              <div class="progress skill-bar"><div class="progress-bar" style="width:85%"></div></div>
+              <div class="progress skill-bar"><div class="progress-bar" data-width="85%" style="width:85%"></div></div>
             </div>
             <div class="skill-item">
               <div class="skill-meta"><span>JavaScript</span><span class="text-lime">70%</span></div>
-              <div class="progress skill-bar"><div class="progress-bar" style="width:70%"></div></div>
+              <div class="progress skill-bar"><div class="progress-bar" data-width="70%" style="width:70%"></div></div>
             </div>
           </div>
-          <h3 class="skills-subtitle mt-4">🔹 Back-End</h3>
+          <h3 class="skills-subtitle mt-4" data-i18n="skills.backend">🔹 Back-End</h3>
           <div class="skill-group">
             <div class="skill-item">
               <div class="skill-meta"><span>PHP</span><span class="text-lime">75%</span></div>
-              <div class="progress skill-bar"><div class="progress-bar" style="width:75%"></div></div>
+              <div class="progress skill-bar"><div class="progress-bar" data-width="75%" style="width:75%"></div></div>
             </div>
             <div class="skill-item">
               <div class="skill-meta"><span>MySQL</span><span class="text-lime">80%</span></div>
-              <div class="progress skill-bar"><div class="progress-bar" style="width:80%"></div></div>
+              <div class="progress skill-bar"><div class="progress-bar" data-width="80%" style="width:80%"></div></div>
             </div>
             <div class="skill-item">
               <div class="skill-meta"><span>Laravel</span><span class="text-lime">65%</span></div>
-              <div class="progress skill-bar"><div class="progress-bar" style="width:65%"></div></div>
+              <div class="progress skill-bar"><div class="progress-bar" data-width="65%" style="width:65%"></div></div>
             </div>
             <div class="skill-item">
               <div class="skill-meta"><span>Python</span><span class="text-lime">60%</span></div>
-              <div class="progress skill-bar"><div class="progress-bar" style="width:60%"></div></div>
+              <div class="progress skill-bar"><div class="progress-bar" data-width="60%" style="width:60%"></div></div>
             </div>
             <div class="skill-item">
               <div class="skill-meta"><span>Java</span><span class="text-lime">50%</span></div>
-              <div class="progress skill-bar"><div class="progress-bar" style="width:50%"></div></div>
+              <div class="progress skill-bar"><div class="progress-bar" data-width="50%" style="width:50%"></div></div>
             </div>
           </div>
         </div>
 
         <div class="col-lg-6">
           <!-- Tech Tag Cards -->
-          <h3 class="skills-subtitle">🔹 Cloud & DevOps</h3>
+          <h3 class="skills-subtitle" data-i18n="skills.cloud">🔹 Cloud & DevOps</h3>
           <div class="tech-tags">
             <span class="tech-tag"><i class="bi bi-box me-1"></i>Docker</span>
             <span class="tech-tag"><i class="bi bi-cloud me-1"></i>Cloud Native</span>
@@ -182,13 +188,13 @@
             <span class="tech-tag"><i class="bi bi-git me-1"></i>Git & GitHub</span>
             <span class="tech-tag"><i class="bi bi-shield-lock me-1"></i>JWT Auth</span>
           </div>
-          <h3 class="skills-subtitle mt-4">🛠️ Outils</h3>
+          <h3 class="skills-subtitle mt-4" data-i18n="skills.tools">🛠️ Outils</h3>
           <div class="tech-tags">
             <span class="tech-tag tag-violet"><i class="bi bi-code-slash me-1"></i>VS Code</span>
             <span class="tech-tag tag-violet"><i class="bi bi-github me-1"></i>GitHub</span>
             <span class="tech-tag tag-violet"><i class="bi bi-database me-1"></i>phpMyAdmin</span>
           </div>
-          <h3 class="skills-subtitle mt-4">🧩 Soft Skills</h3>
+          <h3 class="skills-subtitle mt-4" data-i18n="skills.softSkills">🧩 Soft Skills</h3>
           <div class="soft-skills-grid">
             <div class="soft-skill-item"><span class="soft-check">✔</span>Travail en équipe</div>
             <div class="soft-skill-item"><span class="soft-check">✔</span>Adaptabilité</div>
@@ -210,7 +216,7 @@
     <div class="container">
       <div class="section-header">
         <span class="section-tag"></span>
-        <h2 class="section-title">Mes <span class="text-lime">Projets</span></h2>
+        <h2 class="section-title" data-i18n="projects.title">Mes <span class="text-lime">Projets</span></h2>
       </div>
       <div class="row g-4">
 
@@ -233,8 +239,8 @@
                 <span class="ptag">HTML</span><span class="ptag">CSS</span><span class="ptag">JavaScript</span>
                 <span class="ptag ptag-offline"><i class="bi bi-cloud-slash me-1"></i>Non hébergé</span>
               </div>
-              <h4 class="project-title">Cyber Prep — Nexus QCM</h4>
-              <p class="project-desc">Application de préparation au concours via QCM interactifs. Conçue pour les développeurs, elle couvre tout ce dont ils ont besoin : Linux, réseaux, algorithmique et plus encore. Classement, sessions et suivi de précision inclus.</p>
+              <h4 class="project-title" data-i18n="projects.project1.title">Cyber Prep — Nexus QCM</h4>
+              <p class="project-desc" data-i18n="projects.project1.description">Application de préparation au concours via QCM interactifs. Conçue pour les développeurs, elle couvre tout ce dont ils ont besoin : Linux, réseaux, algorithmique et plus encore. Classement, sessions et suivi de précision inclus.</p>
             </div>
           </div>
         </div>
@@ -259,8 +265,8 @@
                 <span class="ptag">HTML</span><span class="ptag">CSS</span><span class="ptag">JavaScript</span><span class="ptag">MongoDB</span>
                 <span class="ptag ptag-offline"><i class="bi bi-cloud-slash me-1"></i>Non hébergé</span>
               </div>
-              <h4 class="project-title">Quiz MongoDB (Projet de tests)</h4>
-              <p class="project-desc">
+              <h4 class="project-title" data-i18n="projects.project2.title">Quiz MongoDB (Projet de tests)</h4>
+              <p class="project-desc" data-i18n="projects.project2.description">
                 Petite application de quiz réalisée pour tester et pratiquer MongoDB et le développement full stack. Code disponible sur GitHub.
               </p>
             </div>
@@ -286,8 +292,8 @@
                 <span class="ptag">Laravel</span><span class="ptag">React</span><span class="ptag">MySQL</span><span class="ptag">API REST</span>
                 <span class="ptag ptag-offline"><i class="bi bi-cloud-slash me-1"></i>Non hébergé</span>
               </div>
-              <h4 class="project-title">AtlasMat — Gestion de Matériels</h4>
-              <p class="project-desc">
+              <h4 class="project-title" data-i18n="projects.project3.title">AtlasMat — Gestion de Matériels</h4>
+              <p class="project-desc" data-i18n="projects.project3.description">
                 Application web complète de gestion de matériels développée lors de mon stage à la Commune d'Ifrane. Backend Laravel (API REST) et frontend React avec tableau de bord, affectations, approvisionnements et historique.
               </p>
             </div>
@@ -304,38 +310,38 @@
     <div class="container">
       <div class="section-header">
         <span class="section-tag"></span>
-        <h2 class="section-title">Me <span class="text-lime">Contacter</span></h2>
+        <h2 class="section-title" data-i18n="contact.title">Me <span class="text-lime">Contacter</span></h2>
       </div>
       <div class="row g-5">
         <div class="col-lg-5">
-          <p class="contact-intro">Vous avez un projet en tête ? Une collaboration ? N'hésitez pas à me contacter, je répondrai dans les plus brefs délais.</p>
+          <p class="contact-intro" data-i18n="contact.intro">Vous avez un projet en tête ? Une collaboration ? N'hésitez pas à me contacter, je répondrai dans les plus brefs délais.</p>
           <div class="contact-info-list">
             <div class="contact-info-item">
               <div class="contact-icon"><i class="bi bi-envelope-fill"></i></div>
               <div>
-                <p class="ci-label">Email</p>
+                <p class="ci-label" data-i18n="contact.info.email">Email</p>
                 <p class="ci-val">yassirbensmina73@gmail.com</p>
               </div>
             </div>
             <div class="contact-info-item">
               <div class="contact-icon"><i class="bi bi-telephone-fill"></i></div>
               <div>
-                <p class="ci-label">Téléphone</p>
+                <p class="ci-label" data-i18n="contact.info.phone">Téléphone</p>
                 <p class="ci-val">+212 772890503</p>
               </div>
             </div>
             <div class="contact-info-item">
               <div class="contact-icon"><i class="bi bi-geo-alt-fill"></i></div>
               <div>
-                <p class="ci-label">Localisation</p>
+                <p class="ci-label" data-i18n="contact.info.location">Localisation</p>
                 <p class="ci-val">Ifrane, Maroc</p>
               </div>
             </div>
           </div>
           <div class="contact-socials">
             <a href="https://github.com/yassirben73-cpu" class="social-icon"><i class="bi bi-github"></i></a>
-            <a href="www.linkedin.com/in/yassir-bensmina-5a7967388" class="social-icon"><i class="bi bi-linkedin"></i></a>
-            <a href="#" class="social-icon"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://www.linkedin.com/in/yassir-bensmina-85aa91420/" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a>
+            <a href="https://x.com/y1ssir_bens" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="bi bi-twitter-x"></i></a>
           </div>
         </div>
         <div class="col-lg-7">
@@ -343,31 +349,31 @@
             <div class="row g-3">
               <div class="col-md-6">
                 <div class="form-group-custom">
-                  <label for="name">Nom complet</label>
-                  <input type="text" id="name" class="form-control custom-input" placeholder="Votre nom" required />
+                  <label for="name" data-i18n="contact.form.name">Nom complet</label>
+                  <input type="text" id="name" class="form-control custom-input" data-i18n-placeholder="contact.form.namePlaceholder" placeholder="Votre nom" required />
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="form-group-custom">
-                  <label for="email">Email</label>
-                  <input type="email" id="email" class="form-control custom-input" placeholder="votre@email.com" required />
+                  <label for="email" data-i18n="contact.form.email">Email</label>
+                  <input type="email" id="email" class="form-control custom-input" data-i18n-placeholder="contact.form.emailPlaceholder" placeholder="votre@email.com" required />
                 </div>
               </div>
               <div class="col-12">
                 <div class="form-group-custom">
-                  <label for="subject">Sujet</label>
-                  <input type="text" id="subject" class="form-control custom-input" placeholder="Sujet du message" required />
+                  <label for="subject" data-i18n="contact.form.subject">Sujet</label>
+                  <input type="text" id="subject" class="form-control custom-input" data-i18n-placeholder="contact.form.subjectPlaceholder" placeholder="Sujet du message" required />
                 </div>
               </div>
               <div class="col-12">
                 <div class="form-group-custom">
-                  <label for="message">Message</label>
-                  <textarea id="message" class="form-control custom-input" rows="5" placeholder="Votre message..." required></textarea>
+                  <label for="message" data-i18n="contact.form.message">Message</label>
+                  <textarea id="message" class="form-control custom-input" rows="5" data-i18n-placeholder="contact.form.messagePlaceholder" placeholder="Votre message..." required></textarea>
                 </div>
               </div>
               <div class="col-12">
                 <button type="submit" class="btn btn-lime w-100">
-                  <i class="bi bi-send-fill me-2"></i>Envoyer le message
+                  <i class="bi bi-send-fill me-2"></i><span data-i18n="contact.form.send">Envoyer le message</span>
                 </button>
               </div>
             </div>
@@ -384,13 +390,13 @@
         <a class="navbar-brand" href="#home">
           <span class="brand-bracket">&lt;</span>fsociety<span class="brand-bracket">/&gt;</span>
         </a>
-        <p class="footer-copy">© 2025 — Tous droits réservés. Construit avec <span class="text-lime">❤</span> et beaucoup de café.</p>
+        <p class="footer-copy" data-i18n="footer.copyright">© 2025 — Tous droits réservés. Construit avec <span class="text-lime">❤</span> et beaucoup de café.</p>
         <a href="#home" class="back-top"><i class="bi bi-arrow-up"></i></a>
       </div>
     </div>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="css/script.js"></script>
+  <script src="script/script.js"></script>
 </body>
 </html>

@@ -1,0 +1,88 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "👋 Hello, I am",
+    "name": "Bensmina yassir",
+    "title": "Full Stack Developer",
+    "description": "Passionate about code, design, and modern technologies. I build performant, elegant, and scalable web applications.",
+    "viewProjects": "View my projects",
+    "contactMe": "Contact me",
+    "badgeTop": "Full Stack Dev",
+    "badgeBottom": "Available",
+    "scroll": "Scroll"
+  },
+  "about": {
+    "title": "About",
+    "intro": "I am a Full Stack Developer passionate about creating modern and intuitive web experiences.",
+    "text": "I studied at OFPPT Ifrane, Web Full Stack option. I am currently completing a one-year training in computer development at the Al Akhawayn Community Center. I don't have professional experience yet, but I completed a one-month internship at the Commune of Ifrane where I developed a stock management system. I specialize in web development with expertise in HTML5, CSS3, Bootstrap, JavaScript, PHP, and Laravel, and I am always looking for new challenges to improve my skills.",
+    "philosophy": "My philosophy: clean code, polished UI, and impeccable user experience.",
+    "info": {
+      "name": "Name",
+      "email": "Email",
+      "city": "City",
+      "status": "Status"
+    },
+    "stats": {
+      "internship": "Internships completed",
+      "projects": "Projects completed"
+    },
+    "downloadCV": "Download CV"
+  },
+  "skills": {
+    "title": "My Skills",
+    "frontend": "Front-End",
+    "backend": "Back-End",
+    "cloud": "Cloud & DevOps",
+    "tools": "Tools",
+    "softSkills": "Soft Skills"
+  },
+  "projects": {
+    "title": "My Projects",
+    "view": "View",
+    "github": "GitHub",
+    "notHosted": "Not hosted",
+    "project1": {
+      "title": "Cyber Prep — Nexus QCM",
+      "description": "Competition preparation application via interactive MCQs. Designed for developers, it covers everything they need: Linux, networks, algorithms, and more. Ranking, sessions, and accuracy tracking included."
+    },
+    "project2": {
+      "title": "MongoDB Quiz (Test Project)",
+      "description": "Small quiz application created to test and practice MongoDB and full stack development. Code available on GitHub."
+    },
+    "project3": {
+      "title": "AtlasMat — Equipment Management",
+      "description": "Complete equipment management web application developed during my internship at the Commune of Ifrane. Laravel backend (REST API) and React frontend with dashboard, assignments, supplies, and history."
+    }
+  },
+  "contact": {
+    "title": "Contact Me",
+    "intro": "Have a project in mind? A collaboration? Don't hesitate to contact me, I'll respond as soon as possible.",
+    "info": {
+      "email": "Email",
+      "phone": "Phone",
+      "location": "Location"
+    },
+    "form": {
+      "name": "Full name",
+      "namePlaceholder": "Your name",
+      "email": "Email",
+      "emailPlaceholder": "your@email.com",
+      "subject": "Subject",
+      "subjectPlaceholder": "Message subject",
+      "message": "Message",
+      "messagePlaceholder": "Your message...",
+      "send": "Send message"
+    },
+    "success": "Message sent successfully!",
+    "error": "Error sending message. Please try again."
+  },
+  "footer": {
+    "copyright": "© 2025 — All rights reserved. Built with ❤ and lots of coffee."
+  }
+}
